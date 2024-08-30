@@ -1,2 +1,23 @@
 
 
+import React, { useState } from 'react';
+
+interface CDFormData {
+    _daoName: string;
+    _daoLocation: string;
+    _targetAudience: string;
+    _daoTitle: string;
+    _daoDescription: string;
+    _daoOverview: string;
+    _daoImageIpfsHash: string;
+    _multiSigAddr: string;
+}
+
+const CreateDaoForm: React.FC = () => {
+    const [CDformData, setCDFormData] = useState<CDFormData>({
+        _daoName: '',
+        _daoLocation: '',
+        _targetAudience: '',
+        _daoTitle: '',
+        _daoDesc
+hkj-ncup-jcd
